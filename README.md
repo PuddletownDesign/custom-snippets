@@ -22,3 +22,7 @@ let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetsDir='~/.vim/bundle/vim-snippets/custom-snippets'
 let g:UltiSnipsSnippetDirectories=['custom-snippets']
 ```
+
+For more info check the offical doc
+
+* https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
