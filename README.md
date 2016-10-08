@@ -7,6 +7,7 @@ If you want to add to this, send a pull request.
 ## Installation
 
 `cd ~.vim/bundle/vim-snippets`
+
 `git clone git@github.com:PuddletownDesign/custom-snippets.git`
 
 ## Settings in `.vimrc`
