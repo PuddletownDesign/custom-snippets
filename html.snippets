@@ -1,0 +1,169 @@
+priority 1
+
+snippet doc "HTML5 Doctype" b
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/styles.css" rel="stylesheet">
+	<title>$1</title>
+</head>
+<body>
+
+$0
+
+</body>
+</html>
+endsnippet
+
+snippet css "link css" b
+<link href="$1.css" rel="stylesheet">$0
+endsnippet
+
+snippet js "javascript link" b
+<script src="$0.js" defer></script>
+endsnippet
+
+snippet p "HTML Tag" b
+<$1>$0</$1>
+endsnippet
+
+snippet a "Link" b
+<a href="$1">$0</a>
+endsnippet
+
+snippet img "img" b
+<img src="${1:images/}$2" alt="${3:alt}">$0
+endsnippet
+
+snippet bq "blockquote" b
+<blockquote>
+	$0
+	<cite></cite>
+</blockquote>
+endsnippet
+
+snippet ab "Abbreviation" b
+<abbr title="$1">$2</abbr>$0
+endsnippet
+
+snippet fig "Figure and Caption" i
+<figure>
+	$0
+	<figcaption></figcaption>
+</figure>
+endsnippet
+
+snippet table "Description" b
+<table>
+	<thead>
+		<tr>
+			<th scope="col"></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+endsnippet
+
+snippet br "br" b
+<br>
+$0
+endsnippet
+
+
+snippet class "class" b
+ class="$0"
+endsnippet
+
+snippet id "id" b
+ id="$0"
+endsnippet
+
+snippet meta "description" b
+<meta name="description" content="$0">
+endsnippet
+
+snippet meta "viewport" b
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+endsnippet
+
+snippet form "form" b
+<form action="${1:#}" method="${2:post}"${3: enctype="multipart/form-data"}>
+	$0
+
+</form>
+endsnippet
+
+snippet bu "button" b
+<button>$1</button>
+$0
+endsnippet
+
+snippet input "text" b
+<label for="$1">$1</label><br>
+<input type="text" name="$1" id="$1"${2: ${3:placeholder="$4"}} ${5: ${6:value="$7"}} ${8:required}>
+<br><br>
+
+$0
+endsnippet
+
+snippet input "textarea" b
+<label for="$1">$1</label><br>
+<textarea name="$1" id="$1" rows="8" cols="40" ${2: ${3:placeholder="$4"}} ${5:required}></textarea><br><br>
+$0
+endsnippet
+
+snippet input "hidden" b
+<input type="hidden" name="$1"${2: value="$3"}>$0
+endsnippet
+
+snippet input "option" b
+<option value="${1:}">${1:}</option>
+$0
+endsnippet
+
+snippet input "option" b
+<option value="${1:}">${1:}</option>
+$0
+endsnippet
+
+snippet input "search" b
+<label for="$1">$1</label><br>
+<input type="search" name="$1" id="$1" placeholder="$1" role="search">
+<br><br>
+
+$0
+endsnippet
+
+snippet input "radio" b
+<label for="$1">$2</label>  
+<input type="radio" name="$1" id="$1" value="$2">$0
+endsnippet
+
+snippet input "checkbox" b
+<input type="checkbox" name="$1" id="$1" value="$2"> $2<br>
+$0
+endsnippet
+
+snippet input "select" b
+<select name="${1:some_name}" id="${2:$1}"${3:${4: multiple}${5: onchange="${6:}"}${7: size="${8:1}"}}>
+	<option${9: value="${10:option1}"}>${11:$10}</option>
+	<option${12: value="${13:option2}"}>${14:$13}</option>${15:}
+	$0
+</select>
+endsnippet
+
+snippet input "text" b
+<label for="tel">Telephone</label><br>
+<input type="tel" name="tel" ${1:required}>
+<br><br>
+
+$0
+endsnippet
+
+
