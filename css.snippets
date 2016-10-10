@@ -15,15 +15,58 @@ margin: ${1:0};$0
 endsnippet
 
 snippet bd "border"
-border: ${1:0};$0
+border: ${1:0}px ${2:solid} #${3:fff};$0
 endsnippet
 
-snippet d "display"
-display: ${1:none};$0
+snippet bb "border bottom"
+border-bottom: ${1:0}px ${2:solid} #${3:fff};$0
+endsnippet
+
+snippet bb "border top"
+border-top: ${1:0}px ${2:solid} #${3:fff};$0
+endsnippet
+
+snippet bl "border left"
+border-left: ${1:0}px ${2:solid} #${3:fff};$0
+endsnippet
+
+snippet br "border right"
+border-right: ${1:0}px ${2:solid} #${3:fff};$0
+endsnippet
+
+snippet br "border right"
+border-right: ${1:0}px ${2:solid} #${3:fff};$0
+endsnippet
+
+
+
+
+snippet bd "border-radius"
+border-radius: ${1:0}px ${2:solid} #${3:fff};$0
+endsnippet
+
+snippet d "none"
+display: none;$0
+endsnippet
+
+snippet d "block"
+display: block;
+endsnippet
+
+snippet d "inline"
+display: inline;
+endsnippet
+
+snippet d "inline block" b
+display: inline-block;
 endsnippet
 
 snippet bg "background"
-background: ${1:none};$0
+background: #${1:fff} ${2:url($3)};$0
+endsnippet
+
+snippet bgs "background"
+background-size: $1%;$0
 endsnippet
 
 snippet ff "font-family"
@@ -38,8 +81,20 @@ snippet w "width"
 width: ${1:auto};$0
 endsnippet
 
-snippet pos "position"
-position: ${1:relative};$0
+snippet po "absolute"
+position: absolute;$0
+endsnippet
+
+snippet po "fixed"
+position: fix;$0
+endsnippet
+
+snippet po "static"
+position: static;$0
+endsnippet
+
+snippet po "relative"
+position: relative;$0
 endsnippet
 
 snippet tt "text-transform"
@@ -50,11 +105,11 @@ snippet ! "!important CSS (!)"
 !important
 endsnippet
 
-snippet tsh "text-shadow: color-hex x y blur (text)"
+snippet ts "text-shadow: color-hex x y blur (text)"
 text-shadow: ${1:${2:color} ${3:offset-x} ${4:offset-y} ${5:blur}};$0
 endsnippet
 
-snippet bxsh "box-shadow: color-hex x y blur (text)"
+snippet bs "box-shadow: color-hex x y blur (text)"
 box-shadow: ${1:${2:offset-x} ${3:offset-y} ${4:blur} ${5:spread} ${6:color}};$0
 endsnippet
 
@@ -460,20 +515,28 @@ $1::selection {
 }
 endsnippet
 
-snippet text "text-align: left:center:right (txt)"
+snippet ta "text-align: left:center:right (txt)"
 text-align: ${1:left/right/center/justify};$0
 endsnippet
 
-snippet text "text-decoration: none:underline:overline:line-through:blink (text)"
+snippet td "text-decoration: none:underline:overline:line-through:blink (text)"
 text-decoration: ${1:none/underline/overline/line-through/blink};$0
 endsnippet
 
-snippet text "text-indent: length (text)"
+snippet ti "text-indent: length (text)"
 text-indent: ${1:10}px;$0
 endsnippet
 
-snippet text "text-transform: capitalize:upper:lower (text)"
-text-transform: ${1:capitalize/uppercase/lowercase};$0
+snippet tt "upper"
+text-transform: upper;$0
+endsnippet
+
+snippet tt "capitalize"
+text-transform: capitalize;$0
+endsnippet
+
+snippet tt "lowercase"
+text-transform: lowercase;$0
 endsnippet
 
 snippet vertical "vertical-align: type (vertical)"
